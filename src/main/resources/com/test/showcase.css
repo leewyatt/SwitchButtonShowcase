@@ -208,7 +208,12 @@
    Platform & Creative Switch Styles
    ============================================================================= */
 
-/* Caspian (JavaFX 2.x look) */
+/*
+ * Caspian (JavaFX 2.x look)
+ * Note: SwitchButton already has Caspian styles in caspian.css.
+ * However, JavaFX 8+ defaults to Modena theme.
+ * This CSS simulates the Caspian appearance under Modena theme.
+ */
 
 .switch-button.caspian-style > .track {
     -fx-background-color:

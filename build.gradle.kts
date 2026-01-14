@@ -43,7 +43,6 @@ tasks.withType<JavaExec> {
         "--add-modules", "javafx.controls",
 
         "-Djava.library.path=$localJfxPath",
-        "--enable-native-access=javafx.graphics",
-        "-Dprism.verbose=true"
+        "--enable-native-access=javafx.graphics"
     )
 }
