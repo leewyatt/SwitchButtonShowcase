@@ -59,6 +59,22 @@ ControlsFX's ToggleSwitch has served the community well for many years. However,
 
 2. **Labeled Properties Don't Work**: Most Labeled properties like `textFill`, `graphic`, `contentDisplay` cannot be used directly because the skin creates an internal Label instead of using the parent's rendering mechanism.
 
+## Why Not Submit a PR to ControlsFX?
+
+Fixing the issues in ControlsFX's ToggleSwitch would essentially require a complete rewrite:
+
+1. **Different Internal Structure**: The component's internal layout and structure are fundamentally different. ToggleSwitch uses an internal Label, while a proper implementation should leverage the parent class's rendering mechanism.
+
+2. **Massive Code Changes**: Over 90% of the code would need to be rewritten, including the control class, skin, and CSS styles.
+
+3. **Breaking Change for Existing Users**: Such significant changes to layout and styling would break existing projects that depend on the current ToggleSwitch implementation.
+
+4. **Essentially a New Component**: At this point, it's no longer a "fix" but creating an entirely new component.
+
+5. **Belongs in Core**: Switch is a fundamental component in modern UI design. SwitchButton should be included in the JavaFX core library as a standard control.
+
+Every major UI framework includes a built-in Switch component. JavaFX developers shouldn't need to add an external dependency for such a basic control.
+
 ## Proposed API
 
 ```java
@@ -80,7 +96,7 @@ public class SwitchButton extends ButtonBase {
 - Has selectedProperty (consistent with ToggleButton)
 - No ToggleGroup support (Switches are for independent settings)
 - No indeterminate state (Switch only has on/off states)
-- Uses AccessibleRole.TOGGLE_BUTTON for accessibility
+- Uses AccessibleRole.TOGGLE_BUTTON for accessibility. (tentative)
 
 ## Implementation Highlights
 
