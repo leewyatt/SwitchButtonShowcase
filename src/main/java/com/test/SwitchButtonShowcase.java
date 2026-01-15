@@ -18,6 +18,8 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 /**
  * Showcase app demonstrating SwitchButton with various themes and styles.
  */
@@ -50,7 +52,7 @@ public class SwitchButtonShowcase extends Application {
         root.getChildren().addAll(header, scrollPane);
 
         Scene scene = new Scene(root, 885, 1020);
-        scene.getStylesheets().add(getClass().getResource("showcase.css").toExternalForm());
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("showcase.css")).toExternalForm());
 
         primaryStage.setTitle("JavaFX SwitchButton Showcase");
         primaryStage.setScene(scene);
@@ -155,6 +157,19 @@ public class SwitchButtonShowcase extends Application {
         // OFF state
         SwitchButton offSwitch = new SwitchButton();
         offSwitch.setSelected(false);
+        configureSwitchButton(styleClass, withText, withGraphic, offSwitch);
+
+        // ON state
+        SwitchButton onSwitch = new SwitchButton();
+        onSwitch.setSelected(true);
+        configureSwitchButton(styleClass, withText, withGraphic, onSwitch);
+
+        grid.add(rowLabel, 0, row);
+        grid.add(offSwitch, 1, row);
+        grid.add(onSwitch, 2, row);
+    }
+
+    private void configureSwitchButton(String styleClass, boolean withText, boolean withGraphic, SwitchButton offSwitch) {
         if (styleClass != null) {
             offSwitch.getStyleClass().add(styleClass);
         }
@@ -169,28 +184,6 @@ public class SwitchButtonShowcase extends Application {
                 offSwitch.textProperty().bind(offSwitch.selectedProperty().map(selected -> selected ? "On" : "Off"));
             }
         }
-
-        // ON state
-        SwitchButton onSwitch = new SwitchButton();
-        onSwitch.setSelected(true);
-        if (styleClass != null) {
-            onSwitch.getStyleClass().add(styleClass);
-        }
-        if (withGraphic) {
-            onSwitch.setGraphic(createWifiIcon());
-            onSwitch.getStyleClass().add("wifi-switch");
-        }
-        if (withText) {
-            if (withGraphic) {
-                onSwitch.setText("Wi-Fi");
-            } else {
-                onSwitch.textProperty().bind(onSwitch.selectedProperty().map(selected -> selected ? "On" : "Off"));
-            }
-        }
-
-        grid.add(rowLabel, 0, row);
-        grid.add(offSwitch, 1, row);
-        grid.add(onSwitch, 2, row);
     }
 
     /**
