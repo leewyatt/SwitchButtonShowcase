@@ -216,61 +216,54 @@
  */
 
 .switch-button.caspian-style > .track {
-    -fx-background-color:
-        linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-        linear-gradient(to bottom, derive(#d0d0d0, -9%) 0%, derive(#d0d0d0, -33%) 100%),
-        linear-gradient(to bottom, derive(#d0d0d0, 65%) 2%, derive(#d0d0d0, -5%) 50%, derive(#d0d0d0, -10%) 98%),
-        linear-gradient(to bottom, derive(#d0d0d0, 20%) 0%, derive(#d0d0d0, -12%) 100%);
+    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+    linear-gradient(to bottom, derive(#d0d0d0, -9%) 0%, derive(#d0d0d0, -33%) 100%),
+    linear-gradient(to bottom, derive(#d0d0d0, 65%) 2%, derive(#d0d0d0, -5%) 50%, derive(#d0d0d0, -10%) 98%),
+    linear-gradient(to bottom, derive(#d0d0d0, 20%) 0%, derive(#d0d0d0, -12%) 100%);
     -fx-background-insets: 0 0 -1 0, 0, 1, 2;
     -fx-background-radius: 1em;
     -fx-padding: 0.666667em 1.25em;
 }
 
 .switch-button.caspian-style:selected > .track {
-    -fx-background-color:
-        linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-        linear-gradient(to bottom, derive(#0093ff, -9%) 0%, derive(#0093ff, -33%) 100%),
-        linear-gradient(to bottom, derive(#0093ff, 65%) 2%, derive(#0093ff, -5%) 50%, derive(#0093ff, -10%) 98%),
-        linear-gradient(to bottom, derive(#0093ff, 20%) 0%, derive(#0093ff, -12%) 100%);
+    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+    linear-gradient(to bottom, derive(#0093ff, -9%) 0%, derive(#0093ff, -33%) 100%),
+    linear-gradient(to bottom, derive(#0093ff, 65%) 2%, derive(#0093ff, -5%) 50%, derive(#0093ff, -10%) 98%),
+    linear-gradient(to bottom, derive(#0093ff, 20%) 0%, derive(#0093ff, -12%) 100%);
 }
 
 .switch-button.caspian-style:hover > .track {
-    -fx-background-color:
-        linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-        linear-gradient(to bottom, derive(#e8e8e8, -9%) 0%, derive(#e8e8e8, -33%) 100%),
-        linear-gradient(to bottom, derive(#e8e8e8, 65%) 2%, derive(#e8e8e8, -5%) 50%, derive(#e8e8e8, -10%) 98%),
-        linear-gradient(to bottom, derive(#e8e8e8, 20%) 0%, derive(#e8e8e8, -12%) 100%);
+    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+    linear-gradient(to bottom, derive(#e8e8e8, -9%) 0%, derive(#e8e8e8, -33%) 100%),
+    linear-gradient(to bottom, derive(#e8e8e8, 65%) 2%, derive(#e8e8e8, -5%) 50%, derive(#e8e8e8, -10%) 98%),
+    linear-gradient(to bottom, derive(#e8e8e8, 20%) 0%, derive(#e8e8e8, -12%) 100%);
 }
 
 .switch-button.caspian-style:selected:hover > .track {
-    -fx-background-color:
-        linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-        linear-gradient(to bottom, derive(#20a3ff, -9%) 0%, derive(#20a3ff, -33%) 100%),
-        linear-gradient(to bottom, derive(#20a3ff, 65%) 2%, derive(#20a3ff, -5%) 50%, derive(#20a3ff, -10%) 98%),
-        linear-gradient(to bottom, derive(#20a3ff, 20%) 0%, derive(#20a3ff, -12%) 100%);
+    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+    linear-gradient(to bottom, derive(#20a3ff, -9%) 0%, derive(#20a3ff, -33%) 100%),
+    linear-gradient(to bottom, derive(#20a3ff, 65%) 2%, derive(#20a3ff, -5%) 50%, derive(#20a3ff, -10%) 98%),
+    linear-gradient(to bottom, derive(#20a3ff, 20%) 0%, derive(#20a3ff, -12%) 100%);
 }
 
-.switch-button.caspian-style > .thumb-container {
-    -fx-padding: 0.166667em;
-}
-
-.switch-button.caspian-style > .thumb-container > .thumb {
-    -fx-background-color:
-        linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-        linear-gradient(to bottom, derive(#d0d0d0, -9%) 0%, derive(#d0d0d0, -33%) 100%),
-        linear-gradient(to bottom, derive(#d0d0d0, 65%) 2%, derive(#d0d0d0, -5%) 50%, derive(#d0d0d0, -10%) 98%),
-        linear-gradient(to bottom, derive(#d0d0d0, 20%) 0%, derive(#d0d0d0, -12%) 100%);
-    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+.switch-button.caspian-style > .thumb {
+    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+    linear-gradient(to bottom, derive(#d0d0d0, -9%) 0%, derive(#d0d0d0, -33%) 100%),
+    linear-gradient(to bottom, derive(#d0d0d0, 65%) 2%, derive(#d0d0d0, -5%) 50%, derive(#d0d0d0, -10%) 98%),
+    linear-gradient(to bottom, derive(#d0d0d0, 20%) 0%, derive(#d0d0d0, -12%) 100%);
+    -fx-background-insets: 0.166667em 0.166667em 0.083333em 0.166667em,
+    0.166667em,
+    0.25em,
+    0.333333em;
     -fx-background-radius: 1em;
-    -fx-padding: 0.5em;
+    -fx-padding: 0.666667em;
 }
 
-.switch-button.caspian-style:hover > .thumb-container > .thumb {
-    -fx-background-color:
-        linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-        linear-gradient(to bottom, derive(#e8e8e8, -9%) 0%, derive(#e8e8e8, -33%) 100%),
-        linear-gradient(to bottom, derive(#e8e8e8, 65%) 2%, derive(#e8e8e8, -5%) 50%, derive(#e8e8e8, -10%) 98%),
-        linear-gradient(to bottom, derive(#e8e8e8, 20%) 0%, derive(#e8e8e8, -12%) 100%);
+.switch-button.caspian-style:hover > .thumb {
+    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+    linear-gradient(to bottom, derive(#e8e8e8, -9%) 0%, derive(#e8e8e8, -33%) 100%),
+    linear-gradient(to bottom, derive(#e8e8e8, 65%) 2%, derive(#e8e8e8, -5%) 50%, derive(#e8e8e8, -10%) 98%),
+    linear-gradient(to bottom, derive(#e8e8e8, 20%) 0%, derive(#e8e8e8, -12%) 100%);
 }
 
 /* iOS */
@@ -293,14 +286,11 @@
     -fx-background-color: #2db550;
 }
 
-.switch-button.ios > .thumb-container {
-    -fx-padding: 0.083333em;
-}
-
-.switch-button.ios > .thumb-container > .thumb {
+.switch-button.ios > .thumb {
     -fx-background-color: white;
+    -fx-background-insets: 0.083333em;
     -fx-background-radius: 1em;
-    -fx-padding: 0.708333em;
+    -fx-padding: 0.791667em;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 4, 0, 0, 1);
 }
 
@@ -324,22 +314,19 @@
     -fx-background-color: #c4aef5;
 }
 
-.switch-button.material > .thumb-container {
-    -fx-padding: 0;
-}
-
-.switch-button.material > .thumb-container > .thumb {
+.switch-button.material > .thumb {
     -fx-background-color: #fafafa;
+    -fx-background-insets: 0; /* no margin, thumb overlaps track */
     -fx-background-radius: 1em;
     -fx-padding: 0.833333em;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2);
 }
 
-.switch-button.material:selected > .thumb-container > .thumb {
+.switch-button.material:selected > .thumb {
     -fx-background-color: #6750a4;
 }
 
-.switch-button.material:hover > .thumb-container > .thumb {
+.switch-button.material:hover > .thumb {
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 6, 0, 0, 2);
 }
 
@@ -369,26 +356,24 @@
     -fx-border-color: #106ebe;
 }
 
-.switch-button.fluent > .thumb-container {
-    -fx-padding: 0.25em;
-}
-
-.switch-button.fluent > .thumb-container > .thumb {
+.switch-button.fluent > .thumb {
     -fx-background-color: #323130;
+    -fx-background-insets: 0.25em;
     -fx-background-radius: 1em;
-    -fx-padding: 0.333333em;
+    -fx-padding: 0.583333em;
 }
 
-.switch-button.fluent:selected > .thumb-container > .thumb {
+.switch-button.fluent:selected > .thumb {
     -fx-background-color: white;
-    -fx-padding: 0.416667em;
+    -fx-background-insets: 0.166667em;
+    -fx-padding: 0.583333em;
 }
 
-.switch-button.fluent:hover > .thumb-container > .thumb {
+.switch-button.fluent:hover > .thumb {
     -fx-background-color: #201f1e;
 }
 
-.switch-button.fluent:selected:hover > .thumb-container > .thumb {
+.switch-button.fluent:selected:hover > .thumb {
     -fx-background-color: white;
 }
 
@@ -412,14 +397,11 @@
     -fx-background-color: #0071eb;
 }
 
-.switch-button.macos > .thumb-container {
-    -fx-padding: 0.083333em;
-}
-
-.switch-button.macos > .thumb-container > .thumb {
+.switch-button.macos > .thumb {
     -fx-background-color: white;
+    -fx-background-insets: 0.083333em;
     -fx-background-radius: 1em;
-    -fx-padding: 0.583333em;
+    -fx-padding: 0.666667em;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 3, 0, 0, 1);
 }
 
@@ -444,22 +426,18 @@
     -fx-background-color: derive(-fx-background, -10%), linear-gradient(to bottom, #38bdf8, #0ea5e9);
 }
 
-.switch-button.theme-switch > .thumb-container {
-    -fx-padding: 0.25em;
-}
-
 /* Moon icon (dark mode off) */
-.switch-button.theme-switch > .thumb-container > .thumb {
+.switch-button.theme-switch > .thumb {
     -fx-background-color: #94a3b8;
     -fx-background-radius: 0;
-    -fx-background-insets: 0;
-    -fx-padding: 0.458333em;
+    -fx-background-insets: 0.25em;
+    -fx-padding: 0.708333em;
     -fx-shape: "M9.0469 0.4106 Q9.2031 0.7231 9.2344 1.0512 Q9.2812 1.3637 9.125 1.6918 Q7.7656 4.1606 7.8438 6.8793 Q7.8438 9.8481 9.2812 12.3637 Q10.7188 14.8793 13.2344 16.3637 Q15.7656 17.8481 18.7969 17.8481 Q19.9219 17.8481 21.0469 17.5981 Q21.4375 17.52 21.75 17.645 Q22.0781 17.77 22.2812 18.0512 Q22.4844 18.3168 22.4844 18.7231 Q22.4844 19.1293 22.2344 19.3637 Q20.4844 21.5981 17.9219 22.8012 Q15.3594 24.0043 12.4844 24.0043 Q9.125 24.0043 6.2344 22.3325 Q3.3594 20.645 1.6719 17.8012 Q0 14.9575 0 11.5981 Q0 7.77 2.1094 4.645 Q4.2344 1.52 7.6875 0.0825 Q8 -0.0738 8.3906 0.0512 Q8.7969 0.1606 8.9531 0.4106 L9.0469 0.4106 Z";
     -fx-scale-shape: true;
 }
 
 /* Sun icon (dark mode on = light theme active) */
-.switch-button.theme-switch:selected > .thumb-container > .thumb {
+.switch-button.theme-switch:selected > .thumb {
     -fx-background-color: #fbbf24;
     -fx-shape: "M12 18 Q13.5938 18 15 17.2031 Q16.4062 16.4062 17.2031 15 Q18 13.5938 18 12 Q18 10.4062 17.2031 9 Q16.4062 7.5938 15 6.7969 Q13.5938 6 12 6 Q10.4062 6 9 6.7969 Q7.5938 7.5938 6.7969 9 Q6 10.4062 6 12 Q6 13.5938 6.7969 15 Q7.5938 16.4062 9 17.2031 Q10.4062 18 12 18 ZM12 0 Q12.3125 0 12.5156 0.2031 Q12.7188 0.4062 12.7188 0.7188 L12.7188 3.7656 Q12.7188 4.0781 12.5156 4.2812 Q12.3125 4.4844 12 4.4844 Q11.6875 4.4844 11.4844 4.2812 Q11.2812 4.0781 11.2812 3.7656 L11.2812 0.7188 Q11.2812 0.4062 11.4844 0.2031 Q11.6875 0 12 0 ZM12 19.5156 Q12.3125 19.5156 12.5156 19.7188 Q12.7188 19.9219 12.7188 20.2344 L12.7188 23.2812 Q12.7188 23.5938 12.5156 23.7969 Q12.3125 24 12 24 Q11.6875 24 11.4844 23.7969 Q11.2812 23.5938 11.2812 23.2812 L11.2812 20.2344 Q11.2812 19.9219 11.4844 19.7188 Q11.6875 19.5156 12 19.5156 ZM24 12 Q24 12.3125 23.7969 12.5156 Q23.5938 12.7188 23.2812 12.7188 L20.2344 12.7188 Q19.9219 12.7188 19.7188 12.5156 Q19.5156 12.3125 19.5156 12 Q19.5156 11.6875 19.7188 11.4844 Q19.9219 11.2812 20.2344 11.2812 L23.2812 11.2812 Q23.5938 11.2812 23.7969 11.4844 Q24 11.6875 24 12 ZM4.4844 12 Q4.4844 12.3125 4.2812 12.5156 Q4.0781 12.7188 3.7656 12.7188 L0.7188 12.7188 Q0.4062 12.7188 0.2031 12.5156 Q0 12.3125 0 12 Q0 11.6875 0.2031 11.4844 Q0.4062 11.2812 0.7188 11.2812 L3.7656 11.2812 Q4.0781 11.2812 4.2812 11.4844 Q4.4844 11.6875 4.4844 12 ZM20.4844 3.5156 Q20.7188 3.7656 20.7188 4.0469 Q20.7188 4.3125 20.4844 4.5625 L18.4062 6.7188 Q18.1562 6.875 17.8281 6.875 Q17.5156 6.875 17.3125 6.6875 Q17.125 6.4844 17.125 6.1719 Q17.125 5.8438 17.2812 5.5938 L19.4375 3.5156 Q19.6875 3.2812 19.9531 3.2812 Q20.2344 3.2812 20.4844 3.5156 ZM6.7188 17.2812 Q6.875 17.5156 6.875 17.8438 Q6.875 18.1562 6.7188 18.4062 L4.5625 20.4844 Q4.3125 20.7188 4.0312 20.7188 Q3.7656 20.7188 3.5156 20.4844 Q3.2812 20.2344 3.2812 19.9688 Q3.2812 19.6875 3.5156 19.4375 L5.5938 17.2812 Q5.8438 17.125 6.1562 17.125 Q6.4844 17.125 6.7188 17.2812 ZM20.4844 20.4844 Q20.2344 20.7188 19.9531 20.7188 Q19.6875 20.7188 19.4375 20.4844 L17.2812 18.4062 Q17.125 18.1562 17.125 17.8438 Q17.125 17.5156 17.3125 17.3281 Q17.5156 17.125 17.8281 17.125 Q18.1562 17.125 18.4062 17.2812 L20.4844 19.4375 Q20.7188 19.6875 20.7188 19.9688 Q20.7188 20.2344 20.4844 20.4844 ZM6.7188 6.7188 Q6.4844 6.875 6.1562 6.875 Q5.8438 6.875 5.5938 6.7188 L3.5156 4.5625 Q3.2031 4.2344 3.3125 3.8438 Q3.4375 3.4375 3.8281 3.3281 Q4.2344 3.2031 4.5625 3.5156 L6.7188 5.5938 Q6.875 5.8438 6.875 6.1719 Q6.875 6.4844 6.7188 6.7188 Z";
 }
@@ -490,17 +468,14 @@
     -fx-effect: dropshadow(gaussian, #00ffaa, 20, 0.6, 0, 0);
 }
 
-.switch-button.neon > .thumb-container {
-    -fx-padding: 0.166667em;
-}
-
-.switch-button.neon > .thumb-container > .thumb {
+.switch-button.neon > .thumb {
     -fx-background-color: #4a4a6a;
+    -fx-background-insets: 0.166667em;
     -fx-background-radius: 1em;
-    -fx-padding: 0.5em;
+    -fx-padding: 0.666667em;
 }
 
-.switch-button.neon:selected > .thumb-container > .thumb {
+.switch-button.neon:selected > .thumb {
     -fx-background-color: #00ff88;
     -fx-effect: dropshadow(gaussian, #00ff88, 10, 0.8, 0, 0);
 }
@@ -528,17 +503,14 @@
     -fx-border-color: #2563eb;
 }
 
-.switch-button.minimal > .thumb-container {
-    -fx-padding: 0.083333em;
-}
-
-.switch-button.minimal > .thumb-container > .thumb {
+.switch-button.minimal > .thumb {
     -fx-background-color: #cbd5e1;
+    -fx-background-insets: 0.083333em;
     -fx-background-radius: 1em;
-    -fx-padding: 0.375em;
+    -fx-padding: 0.458333em;
 }
 
-.switch-button.minimal:selected > .thumb-container > .thumb {
+.switch-button.minimal:selected > .thumb {
     -fx-background-color: #3b82f6;
 }
 
@@ -562,13 +534,10 @@
     -fx-background-color: #059669;
 }
 
-.switch-button.square > .thumb-container {
-    -fx-padding: 0.125em;
-}
-
-.switch-button.square > .thumb-container > .thumb {
+.switch-button.square > .thumb {
     -fx-background-color: white;
+    -fx-background-insets: 0.125em;
     -fx-background-radius: 2;
-    -fx-padding: 0.333333em;
+    -fx-padding: 0.458333em;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 2, 0, 0, 1);
 }

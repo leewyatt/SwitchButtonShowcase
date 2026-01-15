@@ -54,6 +54,7 @@ public class SwitchButtonShowcase extends Application {
 
         primaryStage.setTitle("JavaFX SwitchButton Showcase");
         primaryStage.setScene(scene);
+        // Application.setUserAgentStylesheet(STYLESHEET_CASPIAN);
         primaryStage.show();
     }
 
@@ -162,7 +163,11 @@ public class SwitchButtonShowcase extends Application {
             offSwitch.getStyleClass().add("wifi-switch");
         }
         if (withText) {
-            offSwitch.setText(withGraphic ? "Wi-Fi" : "Off");
+            if (withGraphic) {
+                offSwitch.setText("Wi-Fi");
+            } else {
+                offSwitch.textProperty().bind(offSwitch.selectedProperty().map(selected -> selected ? "On" : "Off"));
+            }
         }
 
         // ON state
@@ -176,7 +181,11 @@ public class SwitchButtonShowcase extends Application {
             onSwitch.getStyleClass().add("wifi-switch");
         }
         if (withText) {
-            onSwitch.setText(withGraphic ? "Wi-Fi" : "On");
+            if (withGraphic) {
+                onSwitch.setText("Wi-Fi");
+            } else {
+                onSwitch.textProperty().bind(onSwitch.selectedProperty().map(selected -> selected ? "On" : "Off"));
+            }
         }
 
         grid.add(rowLabel, 0, row);
