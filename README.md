@@ -26,7 +26,6 @@ The switch control has become a standard UI element across all major platforms. 
 | Flutter | ✓ Switch, CupertinoSwitch, SwitchListTile |
 | React Native | ✓ Switch |
 | Windows (WinUI/UWP) | ✓ ToggleSwitch |
-| Web (HTML5) | ✗ No native support, but all modern CSS frameworks include one |
 
 Currently, JavaFX lacks a native Switch control. Developers must use third-party libraries like ControlsFX, create custom implementations, or style ToggleButton with custom CSS to simulate a switch appearance.
 
@@ -114,7 +113,7 @@ public class SwitchButton extends ButtonBase {
 
 ## Quick Start
 
-**On macOS / Linux:**
+**On macOS:**
 ```bash
 git clone https://github.com/leewyatt/SwitchButtonShowcase.git
 cd SwitchButtonShowcase
