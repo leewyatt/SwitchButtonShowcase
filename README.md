@@ -172,6 +172,15 @@ cp -r build/sdk/lib/* ../SwitchButtonShowcase/libs/<platform>/
 - [OpenJFX Fork (SwitchButton branch)](https://github.com/leewyatt/jfx/tree/add-switch-button)
 - [OpenJFX](https://github.com/openjdk/jfx)
 
+## Credits
+
+| Icon                 | Source | License |
+|----------------------|--------|---------|
+| Sun Fill / Moon fill | [Bootstrap Icons](https://github.com/twbs/icons) | MIT |
+| WiFi / WiFi Off      | [Eva Icons](https://github.com/akveo/eva-icons) | MIT |
+
+Icons discovered via [JFXCentral Icons](https://www.jfx-central.com/icons).
+
 ## License
 
 This project is for demonstration purposes as part of a JavaFX enhancement proposal.
