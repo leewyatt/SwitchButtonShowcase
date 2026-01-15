@@ -156,7 +156,7 @@ git clone https://github.com/leewyatt/jfx.git
 cd jfx
 
 # Switch to the feature branch
-git checkout add-switch-button
+git checkout add-switch-button-v2
 
 # Build (requires JDK 24+)
 ./gradlew sdk
@@ -168,7 +168,7 @@ cp -r build/sdk/lib/* ../SwitchButtonShowcase/libs/<platform>/
 ## Related Links
 
 - [SwitchButton Showcase](https://github.com/leewyatt/SwitchButtonShowcase)
-- [OpenJFX Fork (SwitchButton branch)](https://github.com/leewyatt/jfx/tree/add-switch-button)
+- [OpenJFX Fork (SwitchButton branch)](https://github.com/leewyatt/jfx/tree/add-switch-button-v2)
 - [OpenJFX](https://github.com/openjdk/jfx)
 
 ## Credits
