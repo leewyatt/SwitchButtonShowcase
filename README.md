@@ -144,6 +144,8 @@ SwitchButtonShowcase/
 └── README.md
 ```
 
+> **Note**: Currently, only Windows and macOS builds are provided. Linux users can build JavaFX from source (see below).
+
 ## Building JavaFX from Source
 
 This project uses a locally built JavaFX with the `SwitchButton` control. To build it yourself:
