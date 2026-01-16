@@ -411,7 +411,7 @@
     -fx-background-color: derive(-fx-background, -10%), linear-gradient(to bottom, #1e293b, #334155);
     -fx-background-insets: 0, 1;
     -fx-background-radius: 1em;
-    -fx-padding: 0.75em 1.5em;
+    -fx-padding: 0.825em 1.5em;
 }
 
 .switch-button.theme-switch:selected > .track {
