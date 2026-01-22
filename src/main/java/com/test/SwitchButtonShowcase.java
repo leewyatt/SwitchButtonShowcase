@@ -169,19 +169,19 @@ public class SwitchButtonShowcase extends Application {
         grid.add(onSwitch, 2, row);
     }
 
-    private void configureSwitchButton(String styleClass, boolean withText, boolean withGraphic, SwitchButton offSwitch) {
+    private void configureSwitchButton(String styleClass, boolean withText, boolean withGraphic, SwitchButton switchButton) {
         if (styleClass != null) {
-            offSwitch.getStyleClass().add(styleClass);
+            switchButton.getStyleClass().add(styleClass);
         }
         if (withGraphic) {
-            offSwitch.setGraphic(createWifiIcon());
-            offSwitch.getStyleClass().add("wifi-switch");
+            switchButton.setGraphic(createWifiIcon());
+            switchButton.getStyleClass().add("wifi-switch");
         }
         if (withText) {
             if (withGraphic) {
-                offSwitch.setText("Wi-Fi");
+                switchButton.setText("Wi-Fi");
             } else {
-                offSwitch.textProperty().bind(offSwitch.selectedProperty().map(selected -> selected ? "On" : "Off"));
+                switchButton.textProperty().bind(switchButton.selectedProperty().map(selected -> selected ? "On" : "Off"));
             }
         }
     }
