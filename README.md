@@ -173,6 +173,10 @@ cp -r build/sdk/lib/* ../SwitchButtonShowcase/libs/<platform>/
 - [OpenJFX Fork (SwitchButton branch)](https://github.com/leewyatt/jfx/tree/add-switch-button-v2)
 - [OpenJFX](https://github.com/openjdk/jfx)
 
+## Acknowledgments
+
+Special thanks to [Dirk Lemmermann](https://github.com/dlemmermann) for testing feedback and guidance during the development of this control.
+
 ## Credits
 
 | Icon                 | Source | License |
