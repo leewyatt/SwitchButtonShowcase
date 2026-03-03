@@ -108,10 +108,10 @@ public class SwitchButton extends ButtonBase {
 
 ## Requirements
 
-- JDK 24+ **without bundled JavaFX** (e.g., Oracle JDK, Temurin, or standard Zulu)
+- JDK 25+ **without bundled JavaFX** (e.g., Oracle JDK, Temurin, or standard Zulu)
   > ⚠️ Do NOT use JDKs with bundled JavaFX (e.g., Zulu JDK FX, Liberica Full JDK), as they will override the custom JavaFX modules
 
-- Gradle 8.x
+- Gradle 9.x
 
 ## Quick Start
 
@@ -160,7 +160,7 @@ cd jfx
 # Switch to the feature branch
 git checkout add-switch-button-v2
 
-# Build (requires JDK 24+)
+# Build (requires JDK 25+)
 ./gradlew sdk
 
 # Copy the built files to this project's libs folder
