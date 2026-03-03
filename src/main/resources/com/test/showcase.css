@@ -145,7 +145,6 @@
 
 .style-card .switch-button {
     -fx-text-fill: #1e293b;
-    -fx-label-padding: 0 10 0 0;
     -fx-graphic-text-gap: 10;
 }
 
@@ -176,6 +175,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 16, 0, 0, 3);
     -fx-padding: 8 24 8 24;
     -fx-spacing: 0;
+    -fx-max-width: 784;
 }
 
 .setting-row {
@@ -210,61 +210,108 @@
 
 /*
  * Caspian (JavaFX 2.x look)
- * Note: SwitchButton already has Caspian styles in caspian.css.
- * However, JavaFX 8+ defaults to Modena theme.
- * This CSS simulates the Caspian appearance under Modena theme.
+ * Simulates the Caspian theme appearance under Modena using
+ * hardcoded Caspian base (#d0d0d0) and accent (#0093ff) colors
+ * with the characteristic glossy bottom-bright gradients.
  */
 
 .switch-button.caspian-style > .track {
-    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-    linear-gradient(to bottom, derive(#d0d0d0, -9%) 0%, derive(#d0d0d0, -33%) 100%),
-    linear-gradient(to bottom, derive(#d0d0d0, 65%) 2%, derive(#d0d0d0, -5%) 50%, derive(#d0d0d0, -10%) 98%),
-    linear-gradient(to bottom, derive(#d0d0d0, 20%) 0%, derive(#d0d0d0, -12%) 100%);
-    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-color:
+            derive(#f4f4f4, 60%),
+            derive(#d0d0d0, -22%),
+            linear-gradient(to bottom, derive(#d0d0d0, -15%), derive(#d0d0d0, 2%) 20%, derive(#d0d0d0, 60%));
+    -fx-background-insets: 1 0 -1 0, 0, 1;
     -fx-background-radius: 1em;
-    -fx-padding: 0.666667em 1.25em;
-}
-
-.switch-button.caspian-style:selected > .track {
-    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-    linear-gradient(to bottom, derive(#0093ff, -9%) 0%, derive(#0093ff, -33%) 100%),
-    linear-gradient(to bottom, derive(#0093ff, 65%) 2%, derive(#0093ff, -5%) 50%, derive(#0093ff, -10%) 98%),
-    linear-gradient(to bottom, derive(#0093ff, 20%) 0%, derive(#0093ff, -12%) 100%);
+    -fx-padding: 0.666667em 1.25em; /* 8 15 */
 }
 
 .switch-button.caspian-style:hover > .track {
-    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-    linear-gradient(to bottom, derive(#e8e8e8, -9%) 0%, derive(#e8e8e8, -33%) 100%),
-    linear-gradient(to bottom, derive(#e8e8e8, 65%) 2%, derive(#e8e8e8, -5%) 50%, derive(#e8e8e8, -10%) 98%),
-    linear-gradient(to bottom, derive(#e8e8e8, 20%) 0%, derive(#e8e8e8, -12%) 100%);
+    -fx-background-color:
+            derive(#f4f4f4, 60%),
+            derive(#dcdcdc, -22%),
+            linear-gradient(to bottom, derive(#dcdcdc, -15%), derive(#dcdcdc, 2%) 20%, derive(#dcdcdc, 60%));
+}
+
+.switch-button.caspian-style:armed > .track {
+    -fx-background-color:
+            derive(#f4f4f4, 60%),
+            derive(#a6a6a6, -22%),
+            linear-gradient(to bottom, derive(#a6a6a6, -15%), derive(#a6a6a6, 2%) 20%, derive(#a6a6a6, 60%));
+}
+
+.switch-button.caspian-style:selected > .track {
+    -fx-background-color:
+            derive(#f4f4f4, 60%),
+            derive(#0093ff, -22%),
+            linear-gradient(to bottom, derive(#0093ff, -15%), derive(#0093ff, 2%) 20%, derive(#0093ff, 60%));
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 1em;
 }
 
 .switch-button.caspian-style:selected:hover > .track {
-    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-    linear-gradient(to bottom, derive(#20a3ff, -9%) 0%, derive(#20a3ff, -33%) 100%),
-    linear-gradient(to bottom, derive(#20a3ff, 65%) 2%, derive(#20a3ff, -5%) 50%, derive(#20a3ff, -10%) 98%),
-    linear-gradient(to bottom, derive(#20a3ff, 20%) 0%, derive(#20a3ff, -12%) 100%);
+    -fx-background-color:
+            derive(#f4f4f4, 60%),
+            derive(#0093ff, -12%),
+            linear-gradient(to bottom, derive(#0093ff, -5%), derive(#0093ff, 12%) 20%, derive(#0093ff, 70%));
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 1em;
+}
+
+.switch-button.caspian-style:selected:armed > .track {
+    -fx-background-color:
+            derive(#f4f4f4, 60%),
+            derive(#0093ff, -32%),
+            linear-gradient(to bottom, derive(#0093ff, -25%), derive(#0093ff, -8%) 20%, derive(#0093ff, 50%));
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 1em;
 }
 
 .switch-button.caspian-style > .thumb {
-    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-    linear-gradient(to bottom, derive(#d0d0d0, -9%) 0%, derive(#d0d0d0, -33%) 100%),
-    linear-gradient(to bottom, derive(#d0d0d0, 65%) 2%, derive(#d0d0d0, -5%) 50%, derive(#d0d0d0, -10%) 98%),
-    linear-gradient(to bottom, derive(#d0d0d0, 20%) 0%, derive(#d0d0d0, -12%) 100%);
-    -fx-background-insets: 0.166667em 0.166667em 0.083333em 0.166667em,
-    0.166667em,
-    0.25em,
-    0.333333em;
+    -fx-background-color:
+            linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+            linear-gradient(to bottom, derive(#d0d0d0, -9%) 0%, derive(#d0d0d0, -33%) 100%),
+            linear-gradient(to bottom, derive(#d0d0d0, 65%) 2%, derive(#d0d0d0, -5%) 50%, derive(#d0d0d0, -10%) 98%),
+            linear-gradient(to bottom, derive(#d0d0d0, 20%) 0%, derive(#d0d0d0, -12%) 100%);
+    -fx-background-insets: 0.166667em 0.166667em 0.125em 0.166667em, 0.166667em, 0.25em, 0.333333em;
     -fx-background-radius: 1em;
-    -fx-padding: 0.666667em;
+    -fx-padding: 0.666667em; /* 8 */
+    -fx-effect: null;
 }
 
 .switch-button.caspian-style:hover > .thumb {
-    -fx-background-color: linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
-    linear-gradient(to bottom, derive(#e8e8e8, -9%) 0%, derive(#e8e8e8, -33%) 100%),
-    linear-gradient(to bottom, derive(#e8e8e8, 65%) 2%, derive(#e8e8e8, -5%) 50%, derive(#e8e8e8, -10%) 98%),
-    linear-gradient(to bottom, derive(#e8e8e8, 20%) 0%, derive(#e8e8e8, -12%) 100%);
+    -fx-background-color:
+            linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+            linear-gradient(to bottom, derive(#dcdcdc, -9%) 0%, derive(#dcdcdc, -33%) 100%),
+            linear-gradient(to bottom, derive(#dcdcdc, 65%) 2%, derive(#dcdcdc, -5%) 50%, derive(#dcdcdc, -10%) 98%),
+            linear-gradient(to bottom, derive(#dcdcdc, 20%) 0%, derive(#dcdcdc, -12%) 100%);
 }
+
+.switch-button.caspian-style:armed > .thumb {
+    -fx-background-color:
+            linear-gradient(to bottom, derive(#f4f4f4, 40%) 0%, derive(#f4f4f4, 100%) 100%),
+            linear-gradient(to bottom, derive(#a6a6a6, -9%) 0%, derive(#a6a6a6, -33%) 100%),
+            linear-gradient(to bottom, derive(#a6a6a6, 65%) 2%, derive(#a6a6a6, -5%) 50%, derive(#a6a6a6, -10%) 98%),
+            linear-gradient(to bottom, derive(#a6a6a6, 20%) 0%, derive(#a6a6a6, -12%) 100%);
+}
+
+.switch-button.caspian-style:focused > .track {
+    -fx-background-color:
+            #0093ff,
+            linear-gradient(to bottom, derive(#d0d0d0, -9%), derive(#d0d0d0, -33%)),
+            linear-gradient(to bottom, derive(#d0d0d0, -15%), derive(#d0d0d0, 2%) 20%, derive(#d0d0d0, 60%));
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1em;
+}
+
+.switch-button.caspian-style:focused:selected > .track {
+    -fx-background-color:
+            #0093ff,
+            linear-gradient(to bottom, derive(#d0d0d0, -9%), derive(#d0d0d0, -33%)),
+            linear-gradient(to bottom, derive(#0093ff, -15%), derive(#0093ff, 2%) 20%, derive(#0093ff, 60%));
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1em;
+}
+
 
 /* iOS */
 
@@ -411,7 +458,7 @@
     -fx-background-color: derive(-fx-background, -10%), linear-gradient(to bottom, #1e293b, #334155);
     -fx-background-insets: 0, 1;
     -fx-background-radius: 1em;
-    -fx-padding: 0.75em 1.5em;
+    -fx-padding: 0.825em 1.5em;
 }
 
 .switch-button.theme-switch:selected > .track {
