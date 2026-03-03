@@ -51,7 +51,7 @@ public class SwitchButtonShowcase extends Application {
         scrollPane.setContent(content);
         root.getChildren().addAll(header, scrollPane);
 
-        Scene scene = new Scene(root, 885, 1020);
+        Scene scene = new Scene(root, 888, 1020);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("showcase.css")).toExternalForm());
 
         primaryStage.setTitle("JavaFX SwitchButton Showcase");
@@ -300,9 +300,9 @@ public class SwitchButtonShowcase extends Application {
         card.getStyleClass().add("interactive-card");
 
         card.getChildren().addAll(
-                createSettingRow("Enable Notifications", "Receive push notifications", "ios"),
+                createSettingRow("Wi-Fi", "Connect to nearby wireless networks automatically", "ios"),
                 new Separator(),
-                createSettingRow("Dark Mode", "Switch to dark theme", "theme-switch")
+                createSettingRow("Night Shift", "Reduce blue light emission for comfortable viewing at night", "theme-switch")
         );
 
         section.getChildren().addAll(titleLabel, descLabel, card);
